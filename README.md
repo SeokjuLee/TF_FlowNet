@@ -29,10 +29,14 @@ cd ~/sk_week4
 source activate SK_Week4_RCV
 ```
 
-1) Clone git
+1) Clone or pull git
 ```Shell
 git clone https://github.com/SeokjuLee/TF_FlowNet
 cd TF_FlowNet
+
+cd TF_FlowNet
+git reset --hard HEAD
+git pull
 ```
 
 2) Download dataset
