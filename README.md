@@ -23,6 +23,12 @@ jupyter notebook
 ```
 
 ## Usage
+0) Activate conda env
+```Shell
+cd ~/sk_week4
+source activate SK_Week4_RCV
+```
+
 1) Clone git
 ```Shell
 git clone https://github.com/SeokjuLee/TF_FlowNet
