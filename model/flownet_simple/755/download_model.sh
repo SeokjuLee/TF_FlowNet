@@ -2,7 +2,7 @@
 #url=$1
 #filename=$2
 url=https://drive.google.com/open?id=1Ck9BK1m9mFv5cpMudbldok7VIkiYEvbp
-filename=abc.zip
+filename=flownet_755.zip
 
 [ -z "$url" ] && echo A URL or ID is required first argument && exit 1
 
