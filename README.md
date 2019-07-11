@@ -21,3 +21,26 @@ conda install tensorflow-gpu=1.8
 python -m ipykernel install  --user --name SK_Week4_sfm --display-name "[SK_Week4_sfm]"
 jupyter notebook
 ```
+
+## Usage
++ Download dataset
+```Shell
+cd dataset/FlyingChairs/data
+./download_dataset.sh
+```
++ Download models
+```Shell
+cd model/flownet_simple/755
+./download_dataset.sh
+
+cd ../333
+./download_dataset.sh
+```
+
++ run test_flownet_simple.py
+```Shell
+CUDA_VISIBLE_DEVICES=0 python3 test_flownet_simple.py
+```
+
+
+
