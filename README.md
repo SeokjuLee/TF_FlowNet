@@ -35,7 +35,7 @@ git clone https://github.com/SeokjuLee/TF_FlowNet
 cd TF_FlowNet
 
 cd TF_FlowNet
-git reset --hard HEAD
+git reset --hard
 git pull
 ```
 
