@@ -37,7 +37,7 @@ cd ../333
 ./download_model.sh
 ```
 
-3) run test_flownet_simple.py
+3) Run test_flownet_simple.py
 ```Shell
 CUDA_VISIBLE_DEVICES=0 python3 test_flownet_simple.py
 ```
