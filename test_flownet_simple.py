@@ -131,7 +131,7 @@ class NetModel(object):
             # pdb.set_trace()
             concat1 = tf.concat([self.x1, self.x2], 3)
 
-            ### Origianl FlowNet
+            ### Original FlowNet
             conv1 = slim.conv2d(concat1, 64, [7, 7], 2, scope='conv1')
             conv2 = slim.conv2d(conv1, 128, [5, 5], 2, scope='conv2')
             conv3 = slim.conv2d(conv2, 256, [5, 5], 2, scope='conv3')
