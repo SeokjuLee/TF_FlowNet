@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 original author: Linjian Zhang
+updated by: Seokju Lee
 
 CUDA_VISIBLE_DEVICES=0,1 python3 train_flownet_simple.py
 
