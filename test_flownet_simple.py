@@ -268,7 +268,7 @@ def main(_):
 
 
             # sio.savemat((dir_test + 'flow_batch_%d' % iteration), {'flow':predict_out})
-            print('iter %04d, loss: %.5f' % (iteration + 1, loss_out_t))
+            # print('iter %04d, loss: %.5f' % (iteration + 1, loss_out_t))
 
 
 if __name__ == "__main__":
