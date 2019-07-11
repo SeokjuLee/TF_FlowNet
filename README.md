@@ -23,21 +23,31 @@ jupyter notebook
 ```
 
 ## Usage
-1) Download dataset
+1) Clone git
+```Shell
+git clone https://github.com/SeokjuLee/TF_FlowNet
+cd TF_FlowNet
+```
+
+2) Download dataset
 ```Shell
 cd dataset/FlyingChairs/data
+chmod +x download_dataset.sh
 ./download_dataset.sh
 ```
-2) Download models
+
+3) Download models
 ```Shell
 cd model/flownet_simple/755
+chmod +x download_model.sh
 ./download_model.sh
 
 cd ../333
+chmod +x download_model.sh
 ./download_model.sh
 ```
 
-3) Run test_flownet_simple.py
+4) Run test_flownet_simple.py
 ```Shell
 CUDA_VISIBLE_DEVICES=0 python3 test_flownet_simple.py
 ```
