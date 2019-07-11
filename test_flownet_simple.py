@@ -238,6 +238,8 @@ def main(_):
             feed_dict[model.x2] = x2_t
             feed_dict[model.x3] = x3_t
             predict_out, loss_out_t = sess.run([model.predict1, model.loss], feed_dict)
+            print('iter %04d, loss: %.5f' % (iteration + 1, loss_out_t))
+            
             out = vis_flow_batch(predict_out)
             pdb.set_trace()
 
@@ -266,9 +268,7 @@ def main(_):
 
             '''
 
-
             # sio.savemat((dir_test + 'flow_batch_%d' % iteration), {'flow':predict_out})
-            # print('iter %04d, loss: %.5f' % (iteration + 1, loss_out_t))
 
 
 if __name__ == "__main__":
