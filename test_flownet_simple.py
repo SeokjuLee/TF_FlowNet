@@ -31,8 +31,8 @@ width = 512
 height = 384
 max_to_keep = 0
 
-dir_restore = 'model/flownet_simple/20190710_333_01/model-4'
-dir_dataset = '/home/ukcheol/dataset/FlyingChairs/data/'
+dir_restore = 'model/flownet_simple/755/model-4'
+dir_dataset = 'dataset/FlyingChairs/data/'
 dir_test = 'test/20190703_01/'
 
 if not os.path.exists(dir_test):
@@ -132,14 +132,14 @@ class NetModel(object):
             concat1 = tf.concat([self.x1, self.x2], 3)
 
             ### Origianl FlowNet
-            # conv1 = slim.conv2d(concat1, 64, [7, 7], 2, scope='conv1')
-            # conv2 = slim.conv2d(conv1, 128, [5, 5], 2, scope='conv2')
-            # conv3 = slim.conv2d(conv2, 256, [5, 5], 2, scope='conv3')
+            conv1 = slim.conv2d(concat1, 64, [7, 7], 2, scope='conv1')
+            conv2 = slim.conv2d(conv1, 128, [5, 5], 2, scope='conv2')
+            conv3 = slim.conv2d(conv2, 256, [5, 5], 2, scope='conv3')
 
             ### FlowNet-SD
-            conv1 = slim.conv2d(concat1, 64, [3, 3], 2, scope='conv1')
-            conv2 = slim.conv2d(conv1, 128, [3, 3], 2, scope='conv2')
-            conv3 = slim.conv2d(conv2, 256, [3, 3], 2, scope='conv3')
+            # conv1 = slim.conv2d(concat1, 64, [3, 3], 2, scope='conv1')
+            # conv2 = slim.conv2d(conv1, 128, [3, 3], 2, scope='conv2')
+            # conv3 = slim.conv2d(conv2, 256, [3, 3], 2, scope='conv3')
 
             conv3_1 = slim.conv2d(conv3, 256, [3, 3], 1, scope='conv3_1')
             conv4 = slim.conv2d(conv3_1, 512, [3, 3], 2, scope='conv4')
