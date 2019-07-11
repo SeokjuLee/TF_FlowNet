@@ -34,6 +34,7 @@ cd TF_FlowNet
 cd dataset/FlyingChairs/data
 chmod +x download_dataset.sh
 ./download_dataset.sh
+cd ../../..
 ```
 
 3) Download models
@@ -41,10 +42,12 @@ chmod +x download_dataset.sh
 cd model/flownet_simple/755
 chmod +x download_model.sh
 ./download_model.sh
+cd ../../..
 
-cd ../333
+cd model/flownet_simple/755
 chmod +x download_model.sh
 ./download_model.sh
+cd ../../..
 ```
 
 4) Run test_flownet_simple.py
