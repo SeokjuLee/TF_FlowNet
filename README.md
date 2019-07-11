@@ -44,7 +44,7 @@ chmod +x download_model.sh
 ./download_model.sh
 cd ../../..
 
-cd model/flownet_simple/755
+cd model/flownet_simple/333
 chmod +x download_model.sh
 ./download_model.sh
 cd ../../..
