@@ -25,7 +25,7 @@ import pdb
 # configuration
 start_number = 0
 batch_size = 3
-test_pairs_number = batch_size*2
+test_pairs_number = 90
 use_gpu_1 = True
 width = 512
 height = 384
