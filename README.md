@@ -23,12 +23,12 @@ jupyter notebook
 ```
 
 ## Usage
-+ Download dataset
+1) Download dataset
 ```Shell
 cd dataset/FlyingChairs/data
 ./download_dataset.sh
 ```
-+ Download models
+2) Download models
 ```Shell
 cd model/flownet_simple/755
 ./download_model.sh
@@ -37,7 +37,7 @@ cd ../333
 ./download_model.sh
 ```
 
-+ run test_flownet_simple.py
+3) run test_flownet_simple.py
 ```Shell
 CUDA_VISIBLE_DEVICES=0 python3 test_flownet_simple.py
 ```
