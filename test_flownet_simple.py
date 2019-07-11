@@ -33,10 +33,10 @@ max_to_keep = 0
 
 dir_restore = 'model/flownet_simple/755/model-4'
 dir_dataset = 'dataset/FlyingChairs/data/'
-dir_test = 'test/20190703_01/'
+# dir_test = 'test/20190703_01/'
 
-if not os.path.exists(dir_test):
-    os.mkdir(dir_test)
+# if not os.path.exists(dir_test):
+#     os.mkdir(dir_test)
 
 ########################################
 # load image mean
