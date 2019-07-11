@@ -31,10 +31,10 @@ cd dataset/FlyingChairs/data
 + Download models
 ```Shell
 cd model/flownet_simple/755
-./download_dataset.sh
+./download_model.sh
 
 cd ../333
-./download_dataset.sh
+./download_model.sh
 ```
 
 + run test_flownet_simple.py
