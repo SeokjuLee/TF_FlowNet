@@ -31,7 +31,7 @@ width = 512
 height = 384
 max_to_keep = 0
 
-dir_restore = 'model/flownet_simple/755/model-4'
+dir_restore = 'model/flownet_simple/755/model-16'
 dir_dataset = 'dataset/FlyingChairs/data/'
 # dir_test = 'test/20190703_01/'
 
