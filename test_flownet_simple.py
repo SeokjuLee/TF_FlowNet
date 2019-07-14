@@ -241,9 +241,7 @@ def main(_):
             print('iter %04d, loss: %.5f' % (iteration + 1, loss_out_t))
             
             out = vis_flow_batch(predict_out)
-            pdb.set_trace()
 
-            '''
             plt.close('all')
             fig = plt.figure(1, figsize=(14, 10))
             fig.add_subplot(3,3,1)
@@ -266,7 +264,7 @@ def main(_):
             plt.imshow(x2_t[2]/255), plt.grid()
             fig.tight_layout(), plt.ion(), plt.show()
 
-            '''
+            pdb.set_trace()
 
             # sio.savemat((dir_test + 'flow_batch_%d' % iteration), {'flow':predict_out})
 
