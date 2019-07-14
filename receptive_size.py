@@ -1,11 +1,11 @@
 # [filter size, stride, padding]
-#Assume the two dimensions are the same
-#Each kernel requires the following parameters:
+### Assume the two dimensions are the same
+### Each kernel requires the following parameters:
 # - k_i: kernel size
 # - s_i: stride
 # - p_i: padding (if padding is uneven, right padding will higher than left padding; "SAME" option in tensorflow)
 # 
-#Each layer i requires the following parameters to be fully represented: 
+### Each layer i requires the following parameters to be fully represented: 
 # - n_i: number of feature (data layer has n_1 = imagesize )
 # - j_i: distance (projected to image pixel distance) between center of two adjacent features
 # - r_i: receptive field of a feature in layer i
@@ -60,19 +60,3 @@ if __name__ == '__main__':
   print ("------------------------")
   
   # pdb.set_trace()
-
-  # layer_name = raw_input ("Layer name where the feature in: ")
-  # layer_idx = layer_names.index(layer_name)
-  # idx_x = int(raw_input ("index of the feature in x dimension (from 0)"))
-  # idx_y = int(raw_input ("index of the feature in y dimension (from 0)"))
-  
-  # n = layerInfos[layer_idx][0]
-  # j = layerInfos[layer_idx][1]
-  # r = layerInfos[layer_idx][2]
-  # start = layerInfos[layer_idx][3]
-  # assert(idx_x < n)
-  # assert(idx_y < n)
-  
-  # print ("receptive field: (%s, %s)" % (r, r))
-  # print ("center: (%s, %s)" % (start+idx_x*j, start+idx_y*j))
-  # 
