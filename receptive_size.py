@@ -14,7 +14,7 @@
 import math
 import pdb
 
-convnet =   [[11,4,0],[3,2,0],[5,1,2],[3,2,0],[3,1,1],[3,1,1],[3,1,1],[3,2,0],[6,1,0], [1, 1, 0]]         # AlexNet
+convnet =   [[11,4,0],[3,2,0],[5,1,2],[3,2,0],[3,1,1],[3,1,1],[3,1,1],[3,2,0],[6,1,0], [1, 1, 0]]       # AlexNet
 layer_names = ['conv1','pool1','conv2','pool2','conv3','conv4','conv5','pool5','fc6-conv', 'fc7-conv']  # AlexNet
 
 # convnet =   [[7,2,0],[5,2,0],[5,2,0],[3,1,0],[3,2,0],[3,1,0],[3,2,0],[3,1,0],[3,2,0],[3,1,0],[3,1,0]] # FlowNet
@@ -33,13 +33,13 @@ def outFromIn(conv, layerIn):
   s = conv[1]             # stride size
   p = conv[2]             # padding size
   
-  n_out = math.floor((n_in - k + 2*p)/s) + 1    # resolution of output feature
+  n_out = __________________________________    # resolution of output feature
   actualP = (n_out-1)*s - n_in + k                     
   pR = math.ceil(actualP/2)
   pL = math.floor(actualP/2)
   
-  j_out = j_in * s                              # output feature distance
-  r_out = r_in + (k - 1)*j_in                   # output receptive field size
+  j_out = ________                              # output feature distance
+  r_out = ___________________                   # output receptive field size
   start_out = start_in + ((k-1)/2 - pL)*j_in    # center position of the first feature in the current layer
   return n_out, j_out, r_out, start_out
   
